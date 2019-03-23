@@ -6,7 +6,7 @@ pipelines:
         - apt
         - gradle
         script:
-        - apt-get update && apt-get install -y openjfx
+        - apt-get update && apt-get install openjfx
         - bash ./gradlew build
         deployment: test
 definitions:
