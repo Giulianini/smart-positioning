@@ -6,7 +6,7 @@ pipelines:
         - apt
         - gradle
         script:
-        - sudo add-apt-repository ppa:webupd8team/java
+        - add-apt-repository ppa:webupd8team/java
         - apt-get update
         - sudo apt-get install oracle-java8-installer
         - bash ./gradlew build
