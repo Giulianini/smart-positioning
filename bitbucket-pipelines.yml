@@ -7,7 +7,7 @@ pipelines:
         - gradle
         script:
         - apt-get update
-        - apt-get install openjdk-8-jre openjfx
+        - apt-get install openjdk-8-jre openjdk
         - bash ./gradlew build
         deployment: test
 definitions:
