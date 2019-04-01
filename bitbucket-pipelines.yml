@@ -3,13 +3,7 @@ pipelines:
   default:
     - step:
         caches:
-        - apt
         - gradle
         script:
-        - apt-get update
-        - apt-get install openjdk-8-jdk
         - bash ./gradlew build
         deployment: test
-definitions:
-  caches:
-    apt: /var/cache/apt/archives
